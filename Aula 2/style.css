@@ -1,55 +1,66 @@
-/* Geral */
+/* Aula 2 - Pedra, Papel ou Tesoura */
+
+/* Corpo */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #eef2f3;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
   color: #333;
-}
-
-/* Cabeçalho e rodapé */
-header, footer {
-  width: 100%;
-  background: #333;
-  color: #fff;
-  padding: 1rem;
   text-align: center;
 }
 
-/* Conteúdo principal */
-main {
-  flex: 1;
-  width: 90%;
-  max-width: 600px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
+/* Cabeçalho */
+header {
+  background-color: #ff9800;
+  color: white;
+  padding: 20px 0;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* Logo */
 .logo {
-  width: 180px;
-  margin-bottom: 1rem;
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-/* Botão */
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Título */
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Botões */
 button {
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  background: #007acc;
-  color: #fff;
+  background-color: #ff9800;
+  color: white;
   border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-  background: #005fa3;
+  background-color: #fb8c00;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* Rodapé */
+footer {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }

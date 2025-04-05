@@ -1,5 +1,6 @@
 function jogar() {
   let perdeu = false;
+  let tentativas = 0;
   for (let rodada = 1; rodada <= 3; rodada++) {
     let escolhaJogador = prompt("Rodada " + rodada + ", escolha vidro: 1, 2 ou 3 ?");
     let pisoQuebrado = Math.floor(Math.random() * 3) + 1;

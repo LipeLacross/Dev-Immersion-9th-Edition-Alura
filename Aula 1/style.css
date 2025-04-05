@@ -1,55 +1,62 @@
-/* Geral */
+/* Aula 1 - Conversor */
+
+/* Corpo */
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
   color: #333;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 20px;
 }
 
-/* Cabeçalho e rodapé */
-header, footer {
-  width: 100%;
-  background: #004466;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Conteúdo principal */
-main {
-  flex: 1;
-  width: 90%;
-  max-width: 600px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 5px;
-  text-align: center;
+/* Cabeçalho */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 0;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* Logo */
 .logo {
-  width: 200px;
-  margin-bottom: 1rem;
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-/* Botão */
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Botões */
 button {
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  background: #004466;
-  color: #fff;
+  background-color: #4caf50;
+  color: white;
   border: none;
-  border-radius: 3px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-  background: #006699;
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* Rodapé */
+footer {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }

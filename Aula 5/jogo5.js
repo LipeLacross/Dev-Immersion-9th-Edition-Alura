@@ -76,6 +76,9 @@ function carregarPergunta() {
     botao.onclick = function () {
       if (resposta.correto) {
         acertos++;
+        botao.classList.add("acerto");
+      } else {
+        botao.classList.add("erro");
       }
       indiceAtual++;
       if (indiceAtual < perguntas.length) {
@@ -87,6 +90,7 @@ function carregarPergunta() {
     respostasElemento.appendChild(botao);
   });
 }
+
 
 // PARTE 5: Função para mostrar a tela final
 function finalizarJogo() {
