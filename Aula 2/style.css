@@ -1,60 +1,55 @@
-/* Global Styles */
+/* Geral */
 body {
-  background-color: black;
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef2f3;
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: white;
-  position: relative;
-}
-
-/* Logo Styles */
-.logo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  max-width: 150px;
-  width: auto;
-}
-
-/* Container with the background image */
-.container {
-  background: url('https://i.postimg.cc/TY28jTqJ/bg4-ia.jpg') no-repeat center center/cover;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
   align-items: center;
+  color: #333;
 }
 
-/* Content div for text and button */
-.content {
+/* Cabeçalho e rodapé */
+header, footer {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 40px;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
   border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.content h2 {
-  margin-bottom: 20px;
+/* Logo */
+.logo {
+  width: 180px;
+  margin-bottom: 1rem;
 }
 
-/* Button Styles */
+/* Botão */
 button {
-  background-color: #ff1b7b;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background: #007acc;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  color: white;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #1ABC9C;
-}
-
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 10px;
+  background: #005fa3;
 }
