@@ -3,27 +3,47 @@ let viloes = ["", "", ""];
 let forcaPersonagem = 0;
 let forcaViloes = 0;
 
-alert("O array personagem contém: " + personagem);
+const viloesPossiveis = [
+  "Nazaré Tedesco",
+  "Odete Roitmann",
+  "Flora",
+  "Carminha",
+  "Laura Prudente da Costa"
+];
+
+alert("Monte seu time!");
+
+// Seleção de personagens
 for (let i = 0; i < 3; i++) {
-  let escolhaPersonagem = prompt("Digite o nome do seu personagem " + (i + 1));
-  personagem[i] = escolhaPersonagem;
+  let nome = prompt(`Digite o nome do personagem ${i + 1}:`);
+  personagem[i] = nome || `Personagem ${i + 1}`;
   forcaPersonagem += Math.floor(Math.random() * 10) + 1;
 }
-console.log("Agora, o Array Personagem contém: " + personagem);
 
-console.log("Início vilões: " + viloes);
+// Seleção aleatória dos vilões
 for (let i = 0; i < 3; i++) {
-  let indiceAleatorio = Math.floor(Math.random() * 5);
-  let viloesPossiveis = ["Nazare Tedesco", "Odete Roitmann", "Flora", "Carminha", "Laura Prudente da Costa"];
-  viloes[i] = viloesPossiveis[indiceAleatorio];
+  let indice = Math.floor(Math.random() * viloesPossiveis.length);
+  viloes[i] = viloesPossiveis[indice];
   forcaViloes += Math.floor(Math.random() * 10) + 1;
 }
-console.log("Final vilões: " + viloes);
 
+// Exibição no console
+console.log("Time do jogador:", personagem, "Força:", forcaPersonagem);
+console.log("Time dos vilões:", viloes, "Força:", forcaViloes);
+
+// Verificação de vencedor
+let mensagemFinal = "";
 if (forcaPersonagem > forcaViloes) {
-  alert("Seu time venceu pela MAIOR força!! Sua força foi: " + forcaPersonagem);
+  mensagemFinal = `✅ Seu time venceu pela MAIOR força! 💪\nForça do jogador: ${forcaPersonagem}\nForça dos vilões: ${forcaViloes}`;
 } else if (forcaPersonagem < forcaViloes) {
-  alert("O computador ganhou o cabo de guerra! Com a força de: " + forcaViloes);
+  mensagemFinal = `❌ O computador venceu o cabo de guerra!\nForça dos vilões: ${forcaViloes}\nForça do jogador: ${forcaPersonagem}`;
 } else {
-  alert("Os dois times têm a mesma força!! Houve um empate.");
+  mensagemFinal = `🤝 Empate! Ambos os times têm a mesma força: ${forcaPersonagem}`;
 }
+
+alert(mensagemFinal);
+
+// Também exibe no HTML (extra)
+document.getElementById("informacoesJogador").textContent = `Seu time: ${personagem.join(", ")} (Força: ${forcaPersonagem})`;
+document.getElementById("informacoesComputador").textContent = `Time dos vilões: ${viloes.join(", ")} (Força: ${forcaViloes})`;
+document.getElementById("resultadoFinal").textContent = mensagemFinal.split("\n")[0];
