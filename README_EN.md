@@ -13,12 +13,12 @@ Project created during the Imersão DEV by Alura (9th edition - 2025), with the 
 - Interactive quiz with general knowledge questions
 
 ### Visual Example of the Project
-
-![Screenshot 2025-04-05 110657](https://github.com/user-attachments/assets/48b7197b-e716-45b6-9d5e-6048c51e3a8d)
-![Screenshot 2025-04-05 110358](https://github.com/user-attachments/assets/703537a3-93a2-4b0a-b54d-2b073caa439b)
-![Screenshot 2025-04-05 105341](https://github.com/user-attachmentas/assets/b6c79817-caa5-4318-b9da-53ff41cf4d69)
-![Screenshot 2025-04-05 105332](https://github.com/user-attachments/assets/1c698f15-bfcf-43c7-b2df-b5165e7fcbc5)
 ![Screenshot 2025-04-05 105322](https://github.com/user-attachments/assets/f4ef9102-6bb0-4bc9-9025-2a1b0f9cc8bb)
+![Screenshot 2025-04-05 105332](https://github.com/user-attachments/assets/1c698f15-bfcf-43c7-b2df-b5165e7fcbc5)
+![Screenshot 2025-04-05 105341](https://github.com/user-attachments/assets/021be439-943b-4f5c-bddd-252e42f76474)
+![Screenshot 2025-04-05 110358](https://github.com/user-attachments/assets/703537a3-93a2-4b0a-b54d-2b073caa439b)
+![Screenshot 2025-04-05 110657](https://github.com/user-attachments/assets/48b7197b-e716-45b6-9d5e-6048c51e3a8d)
+
 
 ## ✔️ Techniques and Technologies Used
 
